@@ -1,0 +1,25 @@
+{{outlet}}
+<h1>Create new products</h1>
+
+<!-- 
+data binding, variable, createRecord, action, event(submit), ember input , 
+controller
+get set
+-->
+
+
+<form {{action "createProduct" on="submit" }}  >
+	<div>
+		
+		<label>Title</label>
+		{{input type="text"  value=title }}
+	</div>
+	
+	<div>
+		<label for="">Price</label>
+		{{input type="text" value=price}}
+	</div>
+
+	<button>Create</button>
+
+</form>

@@ -1,0 +1,13 @@
+{{outlet}}
+<h1> All Products</h1>
+
+{{#link-to 'products.create' }}Create{{/link-to}}
+
+{{#link-to 'products.edit' }}Edit{{/link-to}}
+<br>
+<ul>
+	{{#each model as |product|}}
+		<li>{{product.title}} - {{product.price}}</li>
+	{{/each}}
+</ul>
+	

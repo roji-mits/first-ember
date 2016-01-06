@@ -1,0 +1,19 @@
+{{outlet}}
+<h1>Add new Product</h1>
+<form {{action "createProduct" on="submit"}}>
+	<div>
+		<label > Title</label>
+		{{input type="text" value=product.title placeholder='Product'}} 
+
+	</div>
+	<div>
+		<label >Price</label>
+		{{input type="text" value=product.price placeholder='Price'}} 
+	</div>
+	<div>
+		<button>
+			Create
+		</button>
+	</div>
+	
+</form>

@@ -1,0 +1,19 @@
+{{outlet}}
+<h1>Edit Product</h1>
+<form {{action "updateProduct" model on="submit"}}>
+	<div>
+		<label for="">
+			Title
+		</label>
+		{{input type="text" value=model.title}}
+
+	</div>
+
+	<div>
+		<label for="">
+			price
+		</label>
+		{{input type="text" value=model.price}}
+	</div>
+	<button>Update</button>
+</form>
